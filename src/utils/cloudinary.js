@@ -15,7 +15,8 @@ export const uploadOnCloudinary = async (localFilePath) => {
             resource_type: "auto", // Optional: specify a folder in Cloudinary
         });
         // File uploaded successfully. Remove the file from the local server
-        console.log("Image uploaded to Cloudinary:", response.secure_url);
+        console.log("Image uploaded to Cloudinary:", 
+        response.secure_url);
         return response; // Return the URL of the uploaded image
     
     } catch (error) {
